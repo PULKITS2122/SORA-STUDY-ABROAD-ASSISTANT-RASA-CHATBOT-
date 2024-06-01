@@ -1,0 +1,269 @@
+version: "3.1"
+
+stories:
+
+- story: happy_path
+  steps:
+  - intent: welcome
+  - action: respond_welcome
+  - intent: feeling_happy
+  - action: respond_happy
+
+- story: sad_path_1
+  steps:
+  - intent: welcome
+  - action: respond_welcome
+  - intent: feeling_sad
+  - action: respond_cheer_up
+  - action: respond_helpful
+  - intent: agree
+  - action: respond_happy
+
+- story: sad_path_2
+  steps:
+  - intent: welcome
+  - action: respond_welcome
+  - intent: feeling_sad
+  - action: respond_cheer_up
+  - action: respond_helpful
+  - intent: disagree
+  - action: respond_farewell
+
+- story: inquire_tuition_fees_international
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: inquire_tuition_costs
+    - action: respond_from_europe
+    - intent: disagree
+    - action: action_payment_info
+    - action: respond_helpful
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_cheer_up
+    - intent: farewell
+    - action: respond_farewell
+
+- story: inquire_tuition_fees_european
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: from_europe
+    - action: action_from_europe
+    - intent: agree
+    - action: respond_happy
+    - intent: farewell
+    - action: respond_farewell
+
+- story: inquire_event_dates
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: inquire_upcoming_events
+    - action: action_event_details
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_helpful
+    - intent: farewell
+    - action: respond_farewell
+
+- story: study_semester_abroad_indian
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: from_india
+    - action: respond_from_india
+    - intent: inquire_exchange_program_requirements
+    - action: respond_study_semester_info
+    - intent: inquire_exchange_program_requirements
+    - action: action_exchange_requirements
+    - intent: feeling_happy
+    - action: respond_helpful
+    - intent: agree
+    - action: respond_happy
+    - intent: farewell
+    - action: respond_farewell
+
+- story: available_courses_partner_universities
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: inquire_courses_and_universities
+    - action: respond_courses_info
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_happy
+
+- story: university_website
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: inquire_university_website
+    - action: action_university_website
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_helpful
+    - intent: farewell
+    - action: respond_farewell
+
+- story: inquire_admission_requirements
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: inquire_exchange_program_requirements
+    - action: respond_exchange_requirements
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_helpful
+    - intent: farewell
+    - action: respond_farewell
+
+- story: inquire_application_process
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: inquire_exchange_program_application
+    - action: action_exchange_application
+    - intent: inquire_application_deadline
+    - action: respond_application_deadline
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_helpful
+    - intent: farewell
+    - action: respond_farewell
+
+- story: inquire_internship_abroad
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: inquire_internship_abroad
+    - action: respond_internship_info
+    - intent: inquire_internship_preparation
+    - action: respond_internship_preparation
+    - intent: inquire_upcoming_events
+    - action: respond_event_details
+    - intent: inquire_university_website
+    - action: action_university_website
+    - intent: inquire_mandatory_internship_abroad
+    - action: respond_mandatory_internship
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_helpful
+    - intent: farewell
+    - action: respond_farewell
+
+- story: inquire_short_term_internship
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: inquire_short_internship_abroad
+    - action: respond_short_internship
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_helpful
+    - intent: request_contact_info
+    - action: action_contact_info
+    - intent: farewell
+    - action: respond_farewell
+
+- story: inquire_summer_school
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: inquire_summer_program
+    - action: respond_summer_program_info
+    - intent: inquire_student_ID_card
+    - action: respond_student_ID_card_info
+    - intent: inquire_courses_and_universities
+    - action: respond_courses_info
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_helpful
+    - intent: farewell
+    - action: respond_farewell
+
+- story: inquire_summer_school_funding
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: inquire_summer_program_funding
+    - action: respond_summer_program_funding
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_helpful
+    - intent: request_contact_info
+    - action: respond_contact_info
+    - intent: farewell
+    - action: respond_farewell
+
+- story: inquire_erasmus_program
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: inquire_erasmus_program
+    - action: respond_erasmus_info
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_helpful
+    - intent: request_contact_info
+    - action: respond_contact_info
+    - intent: farewell
+    - action: respond_farewell
+
+- story: contact_request
+  steps:
+    - intent: welcome
+    - action: respond_welcome
+    - intent: feeling_happy
+    - action: respond_happy
+    - intent: request_contact_info
+    - action: action_contact_info
+    - action: respond_checking_in
+    - intent: disagree
+    - action: respond_disagree
+    - intent: feeling_sad
+    - action: respond_helpful
+    - intent: farewell
+    - action: respond_farewell
+

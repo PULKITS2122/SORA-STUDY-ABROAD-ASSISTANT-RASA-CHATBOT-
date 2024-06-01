@@ -1,0 +1,5 @@
+# Ignore the .rasa directory
+.rasa/
+
+# Ignore the env directory
+env/
