@@ -1,0 +1,273 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello how are you?
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - good morning
+    - good evening
+    - good afternoon
+    - hallo
+
+- intent: goodbye
+  examples: |
+    - cu
+    - ciao ciao
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - thank you Good
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ok
+    - yep
+    - yeah
+    - hmm
+    - okay
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I don't want to do this.
+    - nope
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - happy
+    - I am good
+    - feels great
+    - fine
+    - fine, thank you
+    - not bad
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+    - not so good
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - What are you?
+    - What can you do?
+    - who are you?
+
+- intent: indian
+  examples: |
+    - I'm from India and I have a few questions regarding the application for Erasmus.
+    - I am from India and I want to apply for ISIC card.
+    - I am Indian and I am interested in Summer School.
+    - I am Indian.
+
+- intent: european
+  examples: |
+    - I'm from Europe and I have a few questions regarding the application for Erasmus.
+    - I am from Europe and I want to apply for summer school at THD.
+    - I am Europe and I am interested in Summer School.
+    - I am European.
+
+- intent: ask_about_link_uni_website
+  examples: |
+    - What is the link to our university website?
+    - Can I have the link to our university?
+    - How can I reach the university website?
+    - Where can I find the university website?
+    - Does the university website exist?
+    - Steps to reach the university website?
+    - uni website ?
+    - Where can I find the uni website?
+    - Does the uni website exist?
+
+- intent: ask_about_tuition_fees
+  examples: |
+    - tuition fees.
+    - Is there any tuition fees?
+    - Is there any tuition fees at DIT?
+
+- intent: ask_about_available_courses_and_universities
+  examples: |
+    - Can you tell me about the available courses and universities?
+    - What courses and universities are available?
+    - Information about courses and universities?
+
+- intent: ask_about_events
+  examples: |
+    - Are there any events in the university?
+    - When are the events being organized?
+    - What is the schedule of events?
+    - What is the timeline of the events?
+    - May I know if there are any events coming soon?
+    - events ?
+    - event dates ?
+    - Is there any open days events?
+    - Tell me about upcoming events.
+    - What are the latest events related to studying abroad?
+    - Are there any seminars or workshops happening soon?
+
+- intent: ask_about_semester_abroad_admission_requirements
+  examples: |
+    - What are the admission requirements?
+    - What do I need to apply for admission?
+    - I want to know about studying abroad in DIT.
+    - What are the prerequisites for admission?
+    - What documents do I need for admission?
+    - admission requirements ?
+    - admission criteria ?
+    - eligibility criteria ?
+
+- intent: ask_about_semester_abroad_application_process
+  examples: |
+    - How do I apply for admission?
+    - What is the application process?
+    - What are the steps to apply for admission?
+    - Where can I find the application form?
+    - application process ?
+    - application form ?
+    - how to apply for admission ?
+
+- intent: ask_about_semester_abroad_application_deadline
+  examples: |
+    - When is the application deadline for a semester abroad?
+    - Deadline for semester abroad application?
+    - Can you tell me the deadline for applying to study abroad?
+
+- intent: ask_about_internship_abroad
+  examples: |
+    - internship?
+    - internship abroad?
+    - abroad internship?
+    - Can you tell me about internship programs abroad?
+    - What are the available international internships?
+
+- intent: ask_about_internship_abroad_preparation
+  examples: |
+    - How do I apply for an internship abroad?
+    - Steps to apply for internship
+    - necessary steps for internship.
+    - Contact person for internship.
+    - Documents required for internship.
+
+- intent: ask_about_short_internship_abroad
+  examples: |
+    - short internship?
+    - short internship abroad?
+    - abroad internship short term?
+    - short term internship?
+    - Can you tell me about short internship programs abroad?
+    - How do I apply for an internship abroad for short term?
+
+- intent: ask_about_compulsory_internship_abroad
+  examples: |
+    - compulsory internship.
+    - compulsory internship abroad?
+    - abroad internship compulsory?
+    - Can you tell me about compulsory internship programs abroad?
+    - How do I apply for an internship abroad compulsory credit?
+    - Types of compulsory internship.
+
+- intent: ask_about_summer_school
+  examples: |
+    - summer school?
+    - summer school list?
+    - What is a summer school at DIT?
+    - What summer schools do you offer?
+    - Details about summer school programs abroad.
+    - Are there any special summer courses for international students?
+
+- intent: ask_about_summer_school_funding
+  examples: |
+    - summer school fund.
+    - funding summer school.
+    - How can i fund summer schools program?
+    - Details about summer school programs abroad funding.
+
+- intent: ask_about_erasmus
+  examples: |
+    - Erasmus?
+    - Erasmus Scholarship?
+    - What is Erasmus+?
+    - What is an Erasmus Student?
+    - I'd like to know about the requirements of the scholarship.
+    - How can I apply for Erasmus+?
+    - Tell me about the Erasmus+ program.
+
+- intent: ask_about_ISIC_card
+  examples: |
+    - ISIC card?
+    - what is isic card?
+    - how do i get isic card?
+    - what's the cost fr isic card?
+    - How do i apply for isic card?
+    - Validity of ISIC card.
+    - ISIC.
+
+- intent: ask_for_contact
+  examples: |
+    - contact?
+    - contact form?
+    - contact international office?
+    - international office?
+    - I want to contact DIT to solve my doubts.
+    - How can I contact the international office?
+    - I need contact details for further information.
+    - Who should I talk to for more details?
+

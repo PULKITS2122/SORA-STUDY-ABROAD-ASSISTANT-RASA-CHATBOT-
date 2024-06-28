@@ -1,0 +1,164 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - indian
+  - european
+  - ask_about_link_uni_website
+  - ask_about_tuition_fees
+  - ask_about_available_courses_and_universities
+  - ask_about_events
+  - ask_about_semester_abroad_admission_requirements
+  - ask_about_semester_abroad_application_process
+  - ask_about_semester_abroad_application_deadline
+  - ask_about_internship_abroad
+  - ask_about_internship_abroad_preparation
+  - ask_about_short_internship_abroad
+  - ask_about_compulsory_internship_abroad
+  - ask_about_summer_school
+  - ask_about_summer_school_funding
+  - ask_about_ISIC_card
+  - ask_about_erasmus
+  - ask_for_contact
+
+responses:
+
+  utter_greet:
+  - text: "Hey there, I am your personal assistant, to give answer related to Going Abroad in DIT. How can I help you today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_indian:
+  - text: "That's nice :)"
+
+  utter_european:
+  - text: "How to fund your studies is an important factor when choosing to continue your education at university. Therefore, we've complied a living expenses chart to help you see how much financial backing you will need and how to fund your lifestyle to make the most of student life:
+    An overview of expenses:
+    The Bavarian State Ministry supports academic education and therefore charges no tuition fees for all full-time EU/EEA students
+    We only charge a small student services fee of 72€ per semester for full-time EU/EEA students"
+
+  utter_asking_everything_ok:
+  - text: "Hope you got the information. :)"
+
+  utter_deny:
+  - text: "I cannot help with you that."
+
+  utter_events_info:
+  - text: "Here are the upcoming events: [Event Details](https://www.th-deg.de/en/students/going-abroad/event-calender)"
+
+  utter_semester_abroad_admission_requirements:
+  - text: "To get in summer abroad program you need to register on the following link given below. 
+    Please upload all application documents (CV with photo, motivational letter with your reasons for application, enrolment certificate and your DIT-transcript). 
+    If you are in the 1st semester, your transcript can be submitted later, deadline is the end of February.
+    You can find all the admission requirements [here](https://www.service4mobility.com/thdeg/BewerbungServlet?identifier=DEGGEND01&kz_bew_art=OUT&kz_bew_pers=S&aust_prog=SMS&sprache=en)"
+  utter_semester_abroad_application_deadline:
+  - text: "The annual deadline is the 15th February for an exchange semester in the following academic year (winter and summer semester).
+    In mid March all applicants will be informed via e-mail at which partner university they've been accepted, and which further documents need to be handed in to the International Office in B 210 to secure their place.
+    After the nomination through the university: submit Learning Agreement (external and internal) together with the application documents for your host university to the International Office."
+
+  utter_internship_info:
+  - text: "The compulsory internship or a short internship during the semester break can be completed abroad. Both possibilites are explained in detail on iLearn. 
+    Please clarify regulations specified by the Administration Centre. [iLearn](https://ilearn.th-deg.de/course/view.php?id=5664)"
+
+  utter_internship_preparation:
+  - text: "Events that take place every semester:
+    1. Five steps to an international internship
+    2. “Englische Bewerbungsunterlagen erstellen“ (writing an English CV) seminar.
+    Organise a CV check for your English CV with Romy Geiger. [here](https://www.th-deg.de/en/Romy-Geiger-Studienzentrum%20und%20International%20Office-International%20Office-4431533)"
+
+  utter_internship_compulsory:
+  - text: "
+    1. Worldwide internships:
+    After attending the introductory event, arrange a personal consultation to clarify individual enquiries and look on iLearn. Company vacancies can be found on the DIT online jobboard. Additionally, you can apply to the International Office for funding or scholarships.
+    
+    2. European internships:
+    Students who intend to undertake a 60+ day internship in Europe or Island, Liechtenstein, Norway, or Turkey can apply for a scholarship via the International Office. Your internship salary or financial situation is NOT relevant! Please contact Romy Geiger in the International Office.
+    
+    Student-to-student exchange can be viewed on the DAAD EU-community website."
+
+  utter_internship_short:
+  - text: "A short work experience is more about gaining intercultural competence and knowledge of the German language, so keep your mind open and also consider a voluntary job. 
+    You'll learn German fast if you work!"
+
+  utter_summer_school_info:
+  - text: "Apart from studying abroad or doing an internship abroad it is also possible to visit a summer school (usually 3-8 weeks) in a foreign country
+    The summer school programme more than often combines specialised courses, language courses and also information regarding the country itself and it's culture. There may be excursions, too. 
+    It does not substitute the semester abroad but is a great additional chance to go abroad."
+
+  utter_summer_funding:
+  - text: "If you are an enrolled DIT student, there are several opportunities to partially finance your semester abroad through a scholarship.
+    dit scholarship application procedure
+    
+    As all the scholarship programmes outlined here are administered in the International Office, you only need to submit ONE application. Applications may be handed in to the International Office; there is no defined application deadline
+    
+    Required documents:
+    1. Application form
+    2. CV in tabular form
+    3. Financial plan
+    4. Current transcript (grade sheet)
+    5. Passport photo
+    6. Internship contract, if applicable"
+
+  utter_erasmus_info:
+  - text: "Erasmus+ is a European scholarship programme, which supports, promotes and funds student mobility around Europe.
+      Students who join the Erasmus+ programme, study for at least 3 months or complete an internship for at least 2 months in another European country.
+      Link for Erasmus+ [here](https://www.th-deg.de/en/students/going-abroad#erasmus+)"
+
+  utter_available_courses:
+  - text: "Follow this link to find all courses and partner universities offering corresponding courses
+            [here](https://www.th-deg.de/Studierende/Auslandsstudium/partnerunis_studenten.pdf) "
+
+  utter_study_semester_info:
+  - text: "To apply for a study semester abroad, you need to apply for International Student ID card (ISIC).
+  DIT offers to study a semester abroad in various countries. Would you like to explore all the countries that are offered?"
+
+  utter_international_student_ID_card_info:
+  - text: "ISIC card is valid for One year only, the card cost 15 euros. Apply for ISIC card directly on the [here](www.isic.de) website. Follow the get your card link."
+
+  utter_contact_info:
+  - text: "You can contact our international office at [Contact Details](https://www.th-deg.de/en/Mitarbeiter/7127777_Anna_Grantner_SZIO?organisation=Centre%2520for%2520Studies%2520and%2520International%2520Office&id=7127777_Anna_Grantner_SZIO&vorname=Anna&nachname=Grantner)(https://www.th-deg.de/en/Romy-Geiger-Studienzentrum%20und%20International%20Office-International%20Office-4431533?organisation=Centre%2520for%2520Studies%2520and%2520International%2520Office&id=4431533_Romy_Geiger_SZIO&vorname=Romy&nachname=Geiger) "
+
+  utter_iamabot:
+    - text: "I am a bot designed to help you."
+
+actions:
+  - action_european
+  - action_indian
+  - action_pay
+  - action_asking_everything_ok
+  - action_uni_website
+  - action_events_info
+  - action_semester_abroad_admission_requirements
+  - action_semester_abroad_application_process
+  - action_semester_abroad_application_deadline
+  - action_internship_info
+  - action_internship_preparation
+  - action_internship_compulsory
+  - action_internship_short
+  - action_summer_school_info
+  - action_summer_funding
+  - action_erasmus_info
+  - action_available_courses
+  - action_study_semester_info
+  - action_international_student_ID_card_info
+  - action_contact_info
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

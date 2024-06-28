@@ -1,0 +1,271 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+# Additional stories continue here...
+
+- story: asking about tuition fees international
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_about_tuition_fees
+    - action: utter_european
+    - intent: deny
+    - action: action_pay
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: asking about tuition fees european
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: european
+    - action: action_european
+    - intent: affirm
+    - action: utter_happy
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: inquiry about event dates
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_about_events
+    - action: action_events_info
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Study semester abroad admission - indian
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: indian
+    - action: utter_indian
+    - intent: ask_about_semester_abroad_admission_requirements
+    - action: utter_study_semester_info
+    - intent: ask_about_semester_abroad_admission_requirements
+    - action: action_semester_abroad_admission_requirements
+    - intent: mood_great
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: available courses and partner universities
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_about_available_courses_and_universities
+    - action: utter_available_courses
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_happy
+
+
+- story: university website
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_about_link_uni_website
+    - action: action_uni_website
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: asking about semester abroad admission requirements
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_about_semester_abroad_admission_requirements
+    - action: utter_semester_abroad_admission_requirements
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: asking about the semester abroad application process
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_about_semester_abroad_application_process
+    - action: action_semester_abroad_application_process
+    - intent: ask_about_semester_abroad_application_deadline
+    - action: utter_semester_abroad_application_deadline
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: asking about the Internship
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_about_internship_abroad
+    - action: utter_internship_info
+    - intent: ask_about_internship_abroad_preparation
+    - action: utter_internship_preparation
+    - intent: ask_about_events
+    - action: utter_events_info
+    - intent: ask_about_link_uni_website
+    - action: action_uni_website
+    - intent: ask_about_compulsory_internship_abroad
+    - action: utter_internship_compulsory
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Short Term Internship Information
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_about_short_internship_abroad
+    - action: utter_internship_short
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: ask_for_contact
+    - action: action_contact_info
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: Summer school information
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_about_summer_school
+    - action: utter_summer_school_info
+    - intent: ask_about_ISIC_card
+    - action: utter_international_student_ID_card_info
+    - intent: ask_about_available_courses_and_universities
+    - action: utter_available_courses
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: summer school funding information
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_about_summer_school_funding
+    - action: utter_summer_funding
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: ask_for_contact
+    - action: utter_contact_info
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: erasmus+ information
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_about_erasmus
+    - action: utter_erasmus_info
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: ask_for_contact
+    - action: utter_contact_info
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: contact request
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_great
+    - action: utter_happy
+    - intent: ask_for_contact
+    - action: action_contact_info
+    - action: utter_asking_everything_ok
+    - intent: deny
+    - action: utter_deny
+    - intent: mood_unhappy
+    - action: utter_did_that_help
+    - intent: goodbye
+    - action: utter_goodbye
