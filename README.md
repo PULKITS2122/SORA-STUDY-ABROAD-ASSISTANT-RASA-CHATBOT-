@@ -1,4 +1,4 @@
-# NOA STUDY ABROAD ASSISTANT (RASA CHATBOT)
+# SORA STUDY ABROAD ASSISTANT (RASA CHATBOT)
 
 _Members:_
 
@@ -7,11 +7,11 @@ _Members:_
 | Pulkit Sharma | 22201100 |
 | Aryan Jain | 22107593 |
 
-**Project Title: International study abroad chatbot - "Noa"**
+**Project Title: International study abroad chatbot - "SORA"**
 
-GIT LINK : https://mygit.th-deg.de/db30158/project-noa.git
+GIT LINK : https://mygit.th-deg.de/assistance-systems4/assistance-system-rasa-project
 
-WIKI LINK : https://mygit.th-deg.de/db30158/project-noa/-/wikis/home
+WIKI LINK : https://mygit.th-deg.de/assistance-systems4/assistance-system-rasa-project/-/wikis/home
 
 # Project Description
 A helpful chatbot which is build using Python and Rasa. The aim of this chatbot is to help all the new incoming students with their admission queries and to provide them with proper answers and guidance.
@@ -26,7 +26,7 @@ To run this project on your computer, you will need the following software and l
 In order to use this chatbot offline on your personal system, follow the below steps:
 - Download or clone this repository using following command:
 ```
-git clone https://mygit.th-deg.de/db30158/project-noa.git
+git clone https://mygit.th-deg.de/assistance-systems4/assistance-system-rasa-project.git
 ```
 - Go to the cloned directory and install virtualenv package (if you don't have it already)
 ```
@@ -56,14 +56,14 @@ rasa shell
 ```
 
 ## Contributions
-Don Binoy:
+PULKIT SHARMA:
 1. Worked on domain, nlu and stories.
 2. Created dialogs and converted it into a flow
 3. Created critical use case and documented it.
 4. Implemented classes in actions for chatbot to reply accordingly.
 5. Created a system and 2 user personas.
 
-Avanish Kumar Singh:
+ARYAN JAIN:
 1. Worked on domain, nlu and stories.
 2. Created dialogs and converted it into a flow.
 3. Created rules for chatbot.
